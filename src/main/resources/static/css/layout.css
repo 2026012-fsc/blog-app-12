@@ -1,0 +1,34 @@
+/* ヘッダーの設定 */
+header{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #9f9ab8;
+    margin: 30px;
+}
+
+header h1 {
+    margin-top: -5px;
+}
+header input {
+    margin-top: 7px;
+    height: 1.5em;
+}
+
+header div {
+    margin-top: -2px;
+    padding-top: 3px;
+}
+
+/* メニューの設定 */
+.menu{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    width: 20%;
+    max-width: 100px;
+}
+
+.menu a{
+    margin-bottom: 20px;
+}
