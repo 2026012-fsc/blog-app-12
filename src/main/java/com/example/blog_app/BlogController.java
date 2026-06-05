@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class BlogController {
     @GetMapping("/blog")
     public String blog() {
-        return "bolg";
+        return "blog";
     }
     
 }
