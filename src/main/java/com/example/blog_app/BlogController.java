@@ -9,5 +9,11 @@ public class BlogController {
     public String blog() {
         return "blog";
     }
+
+    @GetMapping("/blog/new")
+    public String newbolg() {
+        return "blognew";
+    }
+    
     
 }
