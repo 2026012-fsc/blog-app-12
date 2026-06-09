@@ -5,6 +5,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class BlogController {
+    private final BlogService blogService;
+
+    public BlogController(BlogService blogService){
+        this.blogService = blogService;
+    }
+
     @GetMapping("/blog")
     public String blog() {
         return "blog";
