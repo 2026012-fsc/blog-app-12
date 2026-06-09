@@ -14,6 +14,8 @@ public class BlogRepository {
     }
 
     public List<Blog> findAll(){
-        
+        return jdbcClient.sql("SELECT id, title, maintext FROM blog")
+            .query(Blog.class)
+            .list();
     }
 }
