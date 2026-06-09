@@ -15,9 +15,11 @@
             <a href="/blog">ホーム</a>
             <a href="">プロフィール</a>
         </nav>
-        <div class="colam" th:each="blog : ${Blogs}">
-            <h3 th:text="${blog.title}">title</h3>
-            <p th:text="${blog.maintext}">見出し</p>
+        <div class="colams">
+            <div class="colam" th:each="blog : ${Blogs}">
+                <h3 th:text="${blog.title}">title</h3>
+                <p th:text="${blog.maintext}">見出し</p>
+            </div>
         </div>
     </div>
 
