@@ -16,6 +16,10 @@
     border: 1px solid #000;
 }
 
+.colam h3{
+    border-bottom: 1px solid #000;
+}
+
 /* メニューの設定 */
 .menu {
     display: flex;
@@ -32,7 +36,7 @@
 }
 
 /* blognewの指定 */
-newblog {
+.newblog {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -40,4 +44,12 @@ newblog {
     max-width: 600px;
     border: #000;
     margin: 0 170px;
+}
+
+.newblog input{
+    margin-bottom: 20px;
+}
+
+.botan{
+    margin-top: 20px;
 }
