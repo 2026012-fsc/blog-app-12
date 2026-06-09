@@ -4,18 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
     <title>blog add</title>
 </head>
 
 <body>
     <header th:replace="~{fragments/layout}"></header>
-    <div class="newblog">
-        <input type="text" name="bolgtitle" placeholder="タイトル"></input>
-        <textarea name="blogbody" placeholder="本文"></textarea>
-    </div>
-    <div>
-        <input type="submit"  value="投稿">
-        <a href="/bolg">キャンセル</a>
+    <div class="home">
+        <nav class="menu">
+            <a href="/blog">ホーム</a>
+            <a href="">プロフィール</a>
+        </nav>
+        <div class="newblog">
+            <input type="text" name="title" placeholder="タイトル"></input>
+            <textarea name="body" placeholder="本文"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="投稿">
+            <a href="/blog">キャンセル</a>
+        </div>
     </div>
 </body>
 

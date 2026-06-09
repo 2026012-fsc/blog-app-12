@@ -1,7 +1,33 @@
-.colam{
+/* blogの指定 */
+.home {
+    display: flex;
+    align-content: center;
+    position: relative;
+}
+
+.colam {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 700px;
+    width: 70%;
+    max-width: 600px;
     border: #000;
+    margin: 0 170px;
 }
+
+/* メニューの設定 */
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 30px;
+    top: 0;
+    width: 20%;
+    max-width: 100px;
+}
+
+.menu a {
+    margin-bottom: 20px;
+}
+
+/* blognewの指定 */

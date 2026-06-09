@@ -20,15 +20,3 @@ header div {
     padding-top: 3px;
 }
 
-/* メニューの設定 */
-.menu{
-    display: flex;
-    flex-direction: column;
-    margin-left: 30px;
-    width: 20%;
-    max-width: 100px;
-}
-
-.menu a{
-    margin-bottom: 20px;
-}
