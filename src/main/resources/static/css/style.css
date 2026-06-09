@@ -13,6 +13,7 @@
     max-width: 600px;
     border: #000;
     margin: 0 170px;
+    border: 1px solid #000;
 }
 
 /* メニューの設定 */
@@ -31,3 +32,12 @@
 }
 
 /* blognewの指定 */
+newblog {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    max-width: 600px;
+    border: #000;
+    margin: 0 170px;
+}
