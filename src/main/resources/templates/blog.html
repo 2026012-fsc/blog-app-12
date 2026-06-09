@@ -17,7 +17,7 @@
         </nav>
         <div class="colams">
             <div class="colam" th:each="blog : ${Blogs}">
-                <h3 th:text="${blog.title}">title</h3>
+                <a href="/blog/{id}/colam({id}=${blog.id})"><h3 th:text="${blog.title}">title</h3></a>
                 <p th:text="${blog.maintext}">見出し</p>
             </div>
         </div>

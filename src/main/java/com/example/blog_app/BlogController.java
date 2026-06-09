@@ -3,6 +3,8 @@ package com.example.blog_app;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 
 @Controller
@@ -23,6 +25,12 @@ public class BlogController {
     public String newbolg() {
         return "blognew";
     }
+
+    @GetMapping("/blog/{id}/colam")
+    public String colam(Model model) {
+        return new String();
+    }
+    
     
     
 }
