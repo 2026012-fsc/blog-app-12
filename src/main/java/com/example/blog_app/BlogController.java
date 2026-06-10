@@ -1,10 +1,12 @@
 package com.example.blog_app;
 
+import java.util.Optional;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 
 
 @Controller
@@ -27,8 +29,19 @@ public class BlogController {
     }
 
     @GetMapping("/blog/{id}/colam")
-    public String colam(Model model) {
-        return new String();
+    public String colam(@PathVariable Long id, Model model) {
+        Optional<Blog> blogOpt = blogService.findById(id);
+        if (blogOpt.isEmpty()) {
+            return "redirect:/blog";
+        }
+        model.addAttribute(blogOpt.get());
+        return "detail";
+    }
+    
+    @PostMapping("/blog/new")
+    public String blognew(BlogForm blogForm) {
+        blogService.save(blogForm);
+        return "redirect:/blog";
     }
     
     
