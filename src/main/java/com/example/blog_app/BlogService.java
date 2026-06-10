@@ -1,6 +1,7 @@
 package com.example.blog_app;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
@@ -14,5 +15,13 @@ public class BlogService {
 
     public List<Blog> findAll(){
         return blogRepository.findAll();
+    }
+
+    public void save(BlogForm blogForm){
+        blogRepository.save(blogForm);
+    }
+
+    public Optional<Blog> findById(Long id){
+        return blogRepository.findById(id);
     }
 }
