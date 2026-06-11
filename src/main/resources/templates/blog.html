@@ -16,9 +16,10 @@
             <a href="">プロフィール</a>
         </nav>
         <div class="colams">
-            <div class="colam" th:each="blog : ${Blogs}">
-                <a href="/blog/{id}/colam({id}=${blog.id})"><h3 th:text="${blog.title}">title</h3></a>
-                <p th:text="${blog.maintext}">見出し</p>
+            <p th:if="${#lists.isEmpty(Blogs)}">ブログがありません。</p>
+            <div class="colam" th:each="blog : ${Blogs}" >
+                <a th:href="@{blog/{id}/colam(id=${blog.id})}"><h3 th:text="${blog.title}">title</h3></a>
+                <h5 th:text="${blog.summary}">summary</h5>
             </div>
         </div>
     </div>

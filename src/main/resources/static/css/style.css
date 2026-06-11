@@ -35,6 +35,7 @@ body{
     border-bottom: 1px solid #000;
 }
 
+
 /* メニューの設定 */
 .menu {
     display: flex;
@@ -69,7 +70,35 @@ body{
 .newblog input{
     margin-bottom: 20px;
 }
-
-.botan{
-    margin-top: 20px;
+.newblog textarea{
+    margin-bottom: 20px;
 }
+
+/* detailの設定 */
+.detail{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 50px;
+}
+
+.detail h1{
+    border-bottom: 1px solid #000;
+}
+
+.detail h3, p{
+    white-space: pre-wrap;
+}
+
+.delete{
+    background: none;
+    border: none;
+    color: red;
+    margin: 0 0 0 95%;
+    cursor: pointer;
+}
+
