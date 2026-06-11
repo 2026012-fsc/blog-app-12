@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 
+
 @Controller
 public class BlogController {
     private final BlogService blogService;
@@ -44,6 +45,12 @@ public class BlogController {
         return "redirect:/blog";
     }
     
+    @PostMapping("/blog/{id}/delete")
+    public String delete(@PathVariable Long id) {
+        //TODO: process POST request
+        blogService.delete(id);
+        return "redirect:/blog";
+    }
     
     
 }
